@@ -12,7 +12,7 @@ class Task(models.Model):
 class Profile(models.Model):
     name = models.CharField(max_length=100)
     age = models.PositiveIntegerField()
-    phone_number = models.CharField(max_length=15)
+    phone_number = models.CharField(max_length=10)
     email = models.EmailField()
 
     def __str__(self):
