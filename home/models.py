@@ -18,3 +18,11 @@ class Profile(models.Model):
     def __str__(self):
         return self.name
 
+
+class Details(models.Model):
+    emp_no=models.IntegerField(primary_key=True)
+    url=models.URLField()
+    date=models.DateField()
+
+    def __str__(self):
+        return self.id
